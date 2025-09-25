@@ -1,0 +1,36 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+.venv*/
+env/
+venv/
+*.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+logs/*.log
+!logs/metrics_baseline.txt
+
+# Datos (evitar subir datasets grandes)
+data/processed/*
+data/interim/*
+# Si quieres ignorar también los crudos descomenta la línea siguiente
+# data/raw/*
+
+# Modelos/artefactos
+models/
+artifacts/
+
+# Entornos/poetry
+.poetry/
