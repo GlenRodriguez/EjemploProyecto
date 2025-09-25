@@ -1,1 +1,5 @@
-
+2025-09-24 15:12:01 - INFO - Dataset cargado con 200 filas y 4 columnas
+2025-09-24 15:12:02 - INFO - Filas iniciales: 200
+2025-09-24 15:12:02 - INFO - Filas después de eliminar nulos en 'edad': 180
+2025-09-24 15:12:03 - INFO - Columna 'edad' convertida a entero
+2025-09-24 15:12:04 - INFO - Dataset guardado en data/processed/customers_clean.csv
