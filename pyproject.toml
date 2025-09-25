@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "proyecto-sprint1"
+version = "0.1.0"
+description = "Ejemplo de repo para Proyecto de Investigación II - Sprint 1"
+authors = ["UNI - MIA 403"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.0.0"
+scikit-learn = "^1.2.0"
+matplotlib = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
