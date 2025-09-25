@@ -41,7 +41,6 @@ README.md
 pyproject.toml
 poetry.lock / requirements.txt
 .gitignore
-
 ```
 
 ---
