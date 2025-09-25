@@ -64,10 +64,17 @@ pip install -r requirements.txt
    - Limpieza de nulos, normalización de variables.  
    - Guardado en `data/processed/`.
 
-3. **Entrenamiento baseline (Dummy / kNN / Naive Bayes)**  
+3. **Exploración inicial**  
+   - Abrir y ejecutar el notebook `notebooks/EDA_basico.ipynb`.
+
+4. **Entrenamiento baseline (Dummy / kNN / Naive Bayes)**
+   - Opción A (script): 
    ```bash
    python src/modelo_baseline.py
    ```
+   - Opción B (notebook):  
+     - Abrir y ejecutar `notebooks/Baseline_basico.ipynb`  
+   - Ambos generan resultados en `logs/metrics_baseline.txt`
 
 ---
 
@@ -76,12 +83,13 @@ pip install -r requirements.txt
 - **Baseline Dummy** (majority class) → Accuracy ≈ 0.99 pero sin detección de fraude.  
 - **Baseline kNN (k=5)** → mejora en Recall para clase “fraude”.  
 - **Métrica central**: F1-score sobre clase positiva (`fraude`).  
-
+- **Logs de resultados** → `logs/metrics_baseline.txt`.  
+- **Slides de resultados** → generados con `src/crear_slide_resultados.py` o manualmente en `slides/`.  
 ---
 
 ## 📌 Roadmap
 - [x] Semana 2 → Ingesta + Preprocesamiento + Logging.  
-- [ ] Semana 3 → EDA + Baseline + Demo interna.  
+- [x] Semana 3 → EDA + Baseline + Demo interna.  
 - [ ] Semana 4 → Iteración con features avanzadas.  
 
 ---
