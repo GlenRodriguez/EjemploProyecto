@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ---
 
 ## 📈 Resultados esperados (Semana 3)
-- **EDA inicial** en `notebooks/EDA.ipynb`.  
+- **EDA inicial** en `notebooks/EDA_basico.ipynb`.  
 - **Baseline Dummy** (majority class) → Accuracy ≈ 0.99 pero sin detección de fraude.  
 - **Baseline kNN (k=5)** → mejora en Recall para clase “fraude”.  
 - **Métrica central**: F1-score sobre clase positiva (`fraude`).  
