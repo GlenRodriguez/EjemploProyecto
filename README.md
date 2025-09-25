@@ -1,7 +1,9 @@
 # 🛡️ Detección de Fraude en Transacciones
 
 Proyecto de investigación (Maestría en IA – UNI) para entrenar un modelo de IA que identifique transacciones fraudulentas en tarjetas de crédito. 
+
 Este es un ejemplo para que los alumnos lo usen como guía para organizar su repositorio.
+
 Este repositorio forma parte del curso **Proyecto de Investigación II (MIA 403)**.
 
 ---
