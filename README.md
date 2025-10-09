@@ -1,4 +1,4 @@
-# 🛡️ Detección de Fraude en Transacciones
+# 🛡️ Detección de Fraude en Transacciones (sprint 2)
 
 Proyecto de investigación (Maestría en IA – UNI) para entrenar un modelo de IA que identifique transacciones fraudulentas en tarjetas de crédito. 
 
