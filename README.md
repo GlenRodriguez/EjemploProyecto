@@ -6,6 +6,11 @@ Este es un ejemplo para que los alumnos lo usen como guía para organizar su rep
 
 Este repositorio forma parte del curso **Proyecto de Investigación II (MIA 403)**.
 
+Se han añadido artefactos **didácticos** para simular el **segundo sprint** del proyecto (coherente con Semana 4–6):
+- **EDA iterativo** con enfoque en decisiones (accionables).
+- **Feature Engineering** básico (numéricas, categóricas y temporales si aplica).
+- **Validación** correcta (Stratified K-Fold o TimeSeriesSplit) y registro de **experimentos**.
+
 ---
 
 ## 👥 Autores
@@ -24,26 +29,31 @@ Este repositorio forma parte del curso **Proyecto de Investigación II (MIA 403)
 ---
 
 ## 🗂️ Estructura del repositorio
+## Nuevos/actualizados (respecto a `main`)
 ```
-data/
- ├── raw/          # dataset original
- ├── processed/    # dataset limpio y transformado
-notebooks/         
- ├── EDA_basico.ipynb         # Análisis exploratorio inicial
- └── Baseline_basico.ipynb    # Entrenamiento de baselines (Dummy + kNN)
-src/               
- ├── ingesta.py               # script de ingesta
- ├── preprocesamiento.py      # script de preprocesamiento
- └── modelo_baseline.py       # script con modelo Dummy + kNN
-logs/              # archivos de logging y métricas
-slides/            # presentaciones de resultados
-README.md
-pyproject.toml
-poetry.lock / requirements.txt
-.gitignore
+notebooks/
+├── EDA_iteracion_sem4.ipynb
+└── Experimentos_sem5_resultados.ipynb
+src/
+├── features_pipeline.py
+├── modelo_iteracion.py
+└── validacion.py
+config/
+└── experimentos.yaml
+logs/
+├── metrics_experimentos_template.csv
+└── README_logs.md
+docs/
+└── HOWTO-branch-version-02.md
+data/processed/
+└── sample_processed.csv (muestra pequeña sintética para probar pipelines)
 ```
+**Nota**: Los notebooks y scripts están diseñados para correr con el dataset real del repo (`data/raw/...`). La muestra `sample_processed.csv` sirve para validar el pipeline sin descargar el dataset completo.
 
----
+## Métrica central
+- **Clasificación**: F1 (clase positiva) + PR-AUC.
+- Semillas/splits fijos, pipelines sin fuga (**fit solo en train**).
+```
 
 ## ⚙️ Requisitos
 Instalar dependencias usando [Poetry](https://python-poetry.org/):  
