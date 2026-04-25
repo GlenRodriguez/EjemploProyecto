@@ -11,7 +11,7 @@ Este repositorio forma parte del curso **Proyecto de Investigación II (MIA 403)
 ## 👥 Autores
 - Juan Pérez – [@juanperez01](https://github.com/juanperez01)
 - María Gómez – [@mariagomez02](https://github.com/mariagomez02)
-
+- Glen Rodriguez - [@GlenRodriguez](https://github.com/GlenRodriguez)
 ---
 
 ## 📊 Dataset
